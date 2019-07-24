@@ -30,7 +30,11 @@ int constant_sum(int n)
 // Sum of numbers in interval [n1, n2]
 int range_sum(int n1, int n2)
 {
-   return linear_sum(n2)-linear_sum(n1-1);
+   int s = 0;
+   for(int i = n1; i <= n2; ++i)
+     s += i;
+   return s;  
+   //return linear_sum(n2)-linear_sum(n1-1);
 }
 
 int main(void)
