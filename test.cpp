@@ -27,6 +27,12 @@ int constant_sum(int n)
    return n*(n+1)/2;
 }
 
+// Sum of numbers in interval [n1, n2]
+int range_sum(int n1, int n2)
+{
+   return linear_sum(n2)-linear_sum(n1-1);
+}
+
 int main(void)
 {
     cout << "Test!" << endl;
