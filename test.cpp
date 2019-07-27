@@ -40,6 +40,5 @@ int range_sum(int n1, int n2)
 int main(void)
 {
     cout << "Test!" << endl;
-    cout << "New line added!" << endl;
     return 0;
 }
